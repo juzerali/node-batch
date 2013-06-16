@@ -2,19 +2,16 @@
  * Modules dependencies
  */
 var chai = require('chai')
-,	should = chai.should();
+,	should = chai.should()
+,	EventEmitter = require("events").EventEmitter;
 
  //Test Suite
  var Job = require('../lib/Job');
 
  describe('Job',function(){
-	describe('new Job({/* I/O params not specified */})',function(){
-		it('should throw I/O Error',function(done){
-			(function(){
-				new Job;
-			})
-			.should.Throw(Error);
-			done();
-		});
+	describe('new Job',function(){
+		it('should be an EventEmitter', function(){
+		  Job.should.be.an.EventEmitter;
+		})
 	});
 });
