@@ -13,6 +13,7 @@
     "node-batch": "./bin/node-batch"
   },
   "dependencies": {
+    "commander": "*"
   },
   "keywords": [
     "batch",
@@ -30,5 +31,11 @@
   "scripts": {
     "test": "make test"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "readmeFilename": "README.md",
+  "gitHead": "9329a175ea163de65cc8803c44ab447af9658517",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
 }
